@@ -1,0 +1,828 @@
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem Project Part 3 test batch file 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem cleanup 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>del dbfile.bin 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>del db.lo* 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>del *.log 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>del *.tab 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>del *.obj 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>del *.pdb 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>del *.ilk 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>del first 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>del second 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>del third 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem 01. Setup and inserts 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "create table tab1(name char(16), quizzes int, midterm int, final int)" 
+          create 	1 	 12
+           table 	1 	 13
+            tab1 	2 	 85
+               ( 	3 	 70
+            name 	2 	 85
+            char 	4 	 11
+               ( 	3 	 70
+              16 	5 	 90
+               ) 	3 	 71
+               , 	3 	 72
+         quizzes 	2 	 85
+             int 	4 	 10
+               , 	3 	 72
+         midterm 	2 	 85
+             int 	4 	 10
+               , 	3 	 72
+           final 	2 	 85
+             int 	4 	 10
+               ) 	3 	 71
+                 	7 	 95
+CREATE TABLE statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "create table tab2(college char(20), zipcode char(5), rank int)" 
+dbfile.bin size = 192
+          create 	1 	 12
+           table 	1 	 13
+            tab2 	2 	 85
+               ( 	3 	 70
+         college 	2 	 85
+            char 	4 	 11
+               ( 	3 	 70
+              20 	5 	 90
+               ) 	3 	 71
+               , 	3 	 72
+         zipcode 	2 	 85
+            char 	4 	 11
+               ( 	3 	 70
+               5 	5 	 90
+               ) 	3 	 71
+               , 	3 	 72
+            rank 	2 	 85
+             int 	4 	 10
+               ) 	3 	 71
+                 	7 	 95
+CREATE TABLE statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "insert into tab1 values('Siu', 11, 80, 560)" 
+dbfile.bin size = 336
+          insert 	1 	 21
+            into 	1 	 22
+            tab1 	2 	 85
+          values 	1 	 23
+               ( 	3 	 70
+             Siu 	5 	 91
+               , 	3 	 72
+              11 	5 	 90
+               , 	3 	 72
+              80 	5 	 90
+               , 	3 	 72
+             560 	5 	 90
+               ) 	3 	 71
+                 	7 	 95
+INSERT statement
+Size of tab1.tab: 56. Number of records: 1
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "insert into tab1 values('Frank', 22, 100, 700)" 
+dbfile.bin size = 336
+          insert 	1 	 21
+            into 	1 	 22
+            tab1 	2 	 85
+          values 	1 	 23
+               ( 	3 	 70
+           Frank 	5 	 91
+               , 	3 	 72
+              22 	5 	 90
+               , 	3 	 72
+             100 	5 	 90
+               , 	3 	 72
+             700 	5 	 90
+               ) 	3 	 71
+                 	7 	 95
+INSERT statement
+Size of tab1.tab: 88. Number of records: 2
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "insert into tab1 values('Jordon', 33, 75, 525)" 
+dbfile.bin size = 336
+          insert 	1 	 21
+            into 	1 	 22
+            tab1 	2 	 85
+          values 	1 	 23
+               ( 	3 	 70
+          Jordon 	5 	 91
+               , 	3 	 72
+              33 	5 	 90
+               , 	3 	 72
+              75 	5 	 90
+               , 	3 	 72
+             525 	5 	 90
+               ) 	3 	 71
+                 	7 	 95
+INSERT statement
+Size of tab1.tab: 120. Number of records: 3
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "insert into tab2 values('UCLA', '11111', 3)" 
+dbfile.bin size = 336
+          insert 	1 	 21
+            into 	1 	 22
+            tab2 	2 	 85
+          values 	1 	 23
+               ( 	3 	 70
+            UCLA 	5 	 91
+               , 	3 	 72
+           11111 	5 	 91
+               , 	3 	 72
+               3 	5 	 90
+               ) 	3 	 71
+                 	7 	 95
+INSERT statement
+Size of tab2.tab: 56. Number of records: 1
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "insert into tab2 values('SJSU', '22222', 10)" 
+dbfile.bin size = 336
+          insert 	1 	 21
+            into 	1 	 22
+            tab2 	2 	 85
+          values 	1 	 23
+               ( 	3 	 70
+            SJSU 	5 	 91
+               , 	3 	 72
+           22222 	5 	 91
+               , 	3 	 72
+              10 	5 	 90
+               ) 	3 	 71
+                 	7 	 95
+INSERT statement
+Size of tab2.tab: 88. Number of records: 2
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "insert into tab2 values('Stanford', '33333', 2)" 
+dbfile.bin size = 336
+          insert 	1 	 21
+            into 	1 	 22
+            tab2 	2 	 85
+          values 	1 	 23
+               ( 	3 	 70
+        Stanford 	5 	 91
+               , 	3 	 72
+           33333 	5 	 91
+               , 	3 	 72
+               2 	5 	 90
+               ) 	3 	 71
+                 	7 	 95
+INSERT statement
+Size of tab2.tab: 120. Number of records: 3
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "select * from tab1" 
+dbfile.bin size = 336
+          select 	1 	 29
+               * 	3 	 73
+            from 	1 	 25
+            tab1 	2 	 85
+                 	7 	 95
+SELECT statement
++----------------+----------------+----------------+----------------+
+|name            |quizzes         |midterm         |final           |
++----------------+----------------+----------------+----------------+
+|Siu             |11              |80              |560             |
+|Frank           |22              |100             |700             |
+|Jordon          |33              |75              |525             |
++----------------+----------------+----------------+----------------+
+3 rows selected.
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "select * from tab2" 
+dbfile.bin size = 336
+          select 	1 	 29
+               * 	3 	 73
+            from 	1 	 25
+            tab2 	2 	 85
+                 	7 	 95
+SELECT statement
++----------------+----------------+----------------+
+|college         |zipcode         |rank            |
++----------------+----------------+----------------+
+|UCLA            |11111           |3               |
+|SJSU            |22222           |10              |
+|Stanford        |33333           |2               |
++----------------+----------------+----------------+
+3 rows selected.
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem Check transaction log 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>type db.log 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem 02. Take backup, check image size and db.log 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "backup to first" 
+dbfile.bin size = 336
+          backup 	6 	 39
+              to 	1 	 20
+           first 	2 	 85
+                 	7 	 95
+BACKUP statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem **Size** first=584; dbfile.bin=336; tab1=120 (3 rows); tab2=120 (3 rows) 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>dir first dbfile.bin *.tab 
+ Volume in drive C is Windows
+ Volume Serial Number is D6C0-4C99
+
+ Directory of C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1
+
+
+ Directory of C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1
+
+05/16/2016  07:55 AM               336 dbfile.bin
+
+ Directory of C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1
+
+05/16/2016  07:55 AM               120 tab1.tab
+05/16/2016  07:55 AM               120 tab2.tab
+               3 File(s)            576 bytes
+               0 Dir(s)  13,650,874,368 bytes free
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>type db.log 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem 03. Do more I/U/D 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "insert into tab1 values('Jeff', 44, 60, 515)" 
+dbfile.bin size = 336
+          insert 	1 	 21
+            into 	1 	 22
+            tab1 	2 	 85
+          values 	1 	 23
+               ( 	3 	 70
+            Jeff 	5 	 91
+               , 	3 	 72
+              44 	5 	 90
+               , 	3 	 72
+              60 	5 	 90
+               , 	3 	 72
+             515 	5 	 90
+               ) 	3 	 71
+                 	7 	 95
+INSERT statement
+Size of tab1.tab: 152. Number of records: 4
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "insert into tab2 values('UC Berkley', '44444', 1)" 
+dbfile.bin size = 336
+          insert 	1 	 21
+            into 	1 	 22
+            tab2 	2 	 85
+          values 	1 	 23
+               ( 	3 	 70
+      UC Berkley 	5 	 91
+               , 	3 	 72
+           44444 	5 	 91
+               , 	3 	 72
+               1 	5 	 90
+               ) 	3 	 71
+                 	7 	 95
+INSERT statement
+Size of tab2.tab: 152. Number of records: 4
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>echo Wait a few seconds 
+Wait a few seconds
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>pause
+Press any key to continue . . . 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "insert into tab1 values('Ying', 55, 85, 625)" 
+dbfile.bin size = 336
+          insert 	1 	 21
+            into 	1 	 22
+            tab1 	2 	 85
+          values 	1 	 23
+               ( 	3 	 70
+            Ying 	5 	 91
+               , 	3 	 72
+              55 	5 	 90
+               , 	3 	 72
+              85 	5 	 90
+               , 	3 	 72
+             625 	5 	 90
+               ) 	3 	 71
+                 	7 	 95
+INSERT statement
+Size of tab1.tab: 184. Number of records: 5
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "insert into tab2 values('USC', '55555', 4)" 
+dbfile.bin size = 336
+          insert 	1 	 21
+            into 	1 	 22
+            tab2 	2 	 85
+          values 	1 	 23
+               ( 	3 	 70
+             USC 	5 	 91
+               , 	3 	 72
+           55555 	5 	 91
+               , 	3 	 72
+               4 	5 	 90
+               ) 	3 	 71
+                 	7 	 95
+INSERT statement
+Size of tab2.tab: 184. Number of records: 5
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "delete from tab2 where college = 'UCLA'" 
+dbfile.bin size = 336
+          delete 	1 	 24
+            from 	1 	 25
+            tab2 	2 	 85
+           where 	1 	 26
+         college 	2 	 85
+               = 	3 	 74
+            UCLA 	5 	 91
+                 	7 	 95
+DELETE statement
+Going through rows to check whether any of them meet the conditions
+The condition is: 1
+Going through rows to check whether any of them meet the conditions
+The condition is: 0
+Going through rows to check whether any of them meet the conditions
+The condition is: 0
+Going through rows to check whether any of them meet the conditions
+The condition is: 0
+Going through rows to check whether any of them meet the conditions
+The condition is: 0
+1 rows deleted.
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>echo Wait a few seconds 
+Wait a few seconds
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>pause
+Press any key to continue . . . 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "delete from tab2 where college = 'SJSU'" 
+dbfile.bin size = 336
+          delete 	1 	 24
+            from 	1 	 25
+            tab2 	2 	 85
+           where 	1 	 26
+         college 	2 	 85
+               = 	3 	 74
+            SJSU 	5 	 91
+                 	7 	 95
+DELETE statement
+Going through rows to check whether any of them meet the conditions
+The condition is: 1
+Going through rows to check whether any of them meet the conditions
+The condition is: 0
+Going through rows to check whether any of them meet the conditions
+The condition is: 0
+Going through rows to check whether any of them meet the conditions
+The condition is: 0
+1 rows deleted.
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "update tab1 set final = 999 where name = 'Siu'" 
+dbfile.bin size = 336
+          update 	1 	 27
+            tab1 	2 	 85
+             set 	1 	 28
+           final 	2 	 85
+               = 	3 	 74
+             999 	5 	 90
+           where 	1 	 26
+            name 	2 	 85
+               = 	3 	 74
+             Siu 	5 	 91
+                 	7 	 95
+UPDATE statement
+1 rows updated
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "select * from tab1" 
+dbfile.bin size = 336
+          select 	1 	 29
+               * 	3 	 73
+            from 	1 	 25
+            tab1 	2 	 85
+                 	7 	 95
+SELECT statement
++----------------+----------------+----------------+----------------+
+|name            |quizzes         |midterm         |final           |
++----------------+----------------+----------------+----------------+
+|Siu             |11              |80              |999             |
+|Frank           |22              |100             |700             |
+|Jordon          |33              |75              |525             |
+|Jeff            |44              |60              |515             |
+|Ying            |55              |85              |625             |
++----------------+----------------+----------------+----------------+
+5 rows selected.
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "select * from tab2" 
+dbfile.bin size = 336
+          select 	1 	 29
+               * 	3 	 73
+            from 	1 	 25
+            tab2 	2 	 85
+                 	7 	 95
+SELECT statement
++----------------+----------------+----------------+
+|college         |zipcode         |rank            |
++----------------+----------------+----------------+
+|Stanford        |33333           |2               |
+|UC Berkley      |44444           |1               |
+|USC             |55555           |4               |
++----------------+----------------+----------------+
+3 rows selected.
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>type db.log 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem 04. Take 2nd backup, check image size and db.log 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "backup to second" 
+dbfile.bin size = 336
+          backup 	6 	 39
+              to 	1 	 20
+          second 	2 	 85
+                 	7 	 95
+BACKUP statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem **Size** first=648; dbfile.bin=336; tab1=184 (5 rows); tab2=120 (3 rows) 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>dir second dbfile.bin *.tab 
+ Volume in drive C is Windows
+ Volume Serial Number is D6C0-4C99
+
+ Directory of C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1
+
+
+ Directory of C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1
+
+05/16/2016  07:55 AM               336 dbfile.bin
+
+ Directory of C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1
+
+05/16/2016  07:56 AM               184 tab1.tab
+05/16/2016  07:56 AM               120 tab2.tab
+               3 File(s)            640 bytes
+               0 Dir(s)  13,650,874,368 bytes free
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>type db.log 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem 05. drop tab2, restore from second, check tab2 and RF_START in log 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "drop table tab2" 
+dbfile.bin size = 336
+            drop 	1 	 16
+           table 	1 	 13
+            tab2 	2 	 85
+                 	7 	 95
+DROP TABLE statement
+File tab2 has been successfully removed
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>dir tab2.tab 
+ Volume in drive C is Windows
+ Volume Serial Number is D6C0-4C99
+
+ Directory of C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1
+
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "restore from second" 
+dbfile.bin size = 192
+         restore 	6 	 42
+            from 	1 	 25
+          second 	2 	 85
+                 	7 	 95
+Invalid statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>dir tab2.tab 
+ Volume in drive C is Windows
+ Volume Serial Number is D6C0-4C99
+
+ Directory of C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1
+
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem THIS SHOULD FAIL because it should be RF Pending 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "create table tab3(c1 int)" 
+dbfile.bin size = 192
+          create 	1 	 12
+           table 	1 	 13
+            tab3 	2 	 85
+               ( 	3 	 70
+              c1 	2 	 85
+             int 	4 	 10
+               ) 	3 	 71
+                 	7 	 95
+CREATE TABLE statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>type db.log 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem 06. Do rollforward, tab2 should be dropped again and RF_START is removed 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "rollforward" 
+dbfile.bin size = 264
+     rollforward 	6 	 43
+                 	7 	 95
+Invalid statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>dir tab2.tab 
+ Volume in drive C is Windows
+ Volume Serial Number is D6C0-4C99
+
+ Directory of C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1
+
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>type db.log 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem 07. Do restore from second without RF, check db.log1 before prune, 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem     check tab2 contents 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "create table tab3(c1 int)" 
+dbfile.bin size = 264
+          create 	1 	 12
+           table 	1 	 13
+            tab3 	2 	 85
+               ( 	3 	 70
+              c1 	2 	 85
+             int 	4 	 10
+               ) 	3 	 71
+                 	7 	 95
+CREATE TABLE statement
+
+Error in the string: tab3
+rc=-398
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "insert into tab3 values(911)" 
+dbfile.bin size = 264
+          insert 	1 	 21
+            into 	1 	 22
+            tab3 	2 	 85
+          values 	1 	 23
+               ( 	3 	 70
+             911 	5 	 90
+               ) 	3 	 71
+                 	7 	 95
+INSERT statement
+Size of tab3.tab: 32. Number of records: 1
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>type db.log 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "restore from second without rf" 
+dbfile.bin size = 264
+         restore 	6 	 42
+            from 	1 	 25
+          second 	2 	 85
+         without 	6 	 40
+              rf 	6 	 41
+                 	7 	 95
+Invalid statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>dir db.log1 
+ Volume in drive C is Windows
+ Volume Serial Number is D6C0-4C99
+
+ Directory of C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1
+
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem tab 3 should be gone from PRUNING without rf 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>type db.log 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "select * from tab2" 
+dbfile.bin size = 264
+          select 	1 	 29
+               * 	3 	 73
+            from 	1 	 25
+            tab2 	2 	 85
+                 	7 	 95
+SELECT statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem 08. restore from fisrt, check tab1 & tab2 contents 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "restore from first" 
+dbfile.bin size = 264
+         restore 	6 	 42
+            from 	1 	 25
+           first 	2 	 85
+                 	7 	 95
+Invalid statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "select * from tab1" 
+dbfile.bin size = 264
+          select 	1 	 29
+               * 	3 	 73
+            from 	1 	 25
+            tab1 	2 	 85
+                 	7 	 95
+SELECT statement
++----------------+----------------+----------------+----------------+
+|name            |quizzes         |midterm         |final           |
++----------------+----------------+----------------+----------------+
+|Siu             |11              |80              |999             |
+|Frank           |22              |100             |700             |
+|Jordon          |33              |75              |525             |
+|Jeff            |44              |60              |515             |
+|Ying            |55              |85              |625             |
++----------------+----------------+----------------+----------------+
+5 rows selected.
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "select * from tab2" 
+dbfile.bin size = 264
+          select 	1 	 29
+               * 	3 	 73
+            from 	1 	 25
+            tab2 	2 	 85
+                 	7 	 95
+SELECT statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>type db.log 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem 09. Do rollforward to timestamp  -  Manual step from a different window 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem In this case the timestamp is between the deletion of the 1st the 2nd row from tab2 e.g. db "rollforward to 20030531123030" 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>pause
+Press any key to continue . . . 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem 10. Copy the db.log to db.log3, copy db.log1 to db.log, restore from second, 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem     rollforward, verify tab2 is dropped again. 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>copy db.log db.log3 
+The system cannot find the file specified.
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>copy db.log1 db.log 
+The system cannot find the file specified.
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "restore from second" 
+dbfile.bin size = 264
+         restore 	6 	 42
+            from 	1 	 25
+          second 	2 	 85
+                 	7 	 95
+Invalid statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "rollforward" 
+dbfile.bin size = 264
+     rollforward 	6 	 43
+                 	7 	 95
+Invalid statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>dir tab2.tab 
+ Volume in drive C is Windows
+ Volume Serial Number is D6C0-4C99
+
+ Directory of C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1
+
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem 11 - 13. Errors - dupicate backup image name, bad image name, bad timestamp, wrong state 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "backup to third" 
+dbfile.bin size = 264
+          backup 	6 	 39
+              to 	1 	 20
+           third 	2 	 85
+                 	7 	 95
+BACKUP statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "backup to third" 
+dbfile.bin size = 264
+          backup 	6 	 39
+              to 	1 	 20
+           third 	2 	 85
+                 	7 	 95
+BACKUP statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "restore from nothing" 
+dbfile.bin size = 264
+         restore 	6 	 42
+            from 	1 	 25
+         nothing 	2 	 85
+                 	7 	 95
+Invalid statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "insert into tab1 values('new', 55, 85, 625)" 
+dbfile.bin size = 264
+          insert 	1 	 21
+            into 	1 	 22
+            tab1 	2 	 85
+          values 	1 	 23
+               ( 	3 	 70
+             new 	5 	 91
+               , 	3 	 72
+              55 	5 	 90
+               , 	3 	 72
+              85 	5 	 90
+               , 	3 	 72
+             625 	5 	 90
+               ) 	3 	 71
+                 	7 	 95
+INSERT statement
+Size of tab1.tab: 216. Number of records: 6
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "rollforward" 
+dbfile.bin size = 264
+     rollforward 	6 	 43
+                 	7 	 95
+Invalid statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "restore from third" 
+dbfile.bin size = 264
+         restore 	6 	 42
+            from 	1 	 25
+           third 	2 	 85
+                 	7 	 95
+Invalid statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "rollforward to 20030531123030" 
+dbfile.bin size = 264
+     rollforward 	6 	 43
+              to 	1 	 20
+  20030531123030 	5 	 90
+                 	7 	 95
+Invalid statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "rollforward" 
+dbfile.bin size = 264
+     rollforward 	6 	 43
+                 	7 	 95
+Invalid statement
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>db "select * from tab1" 
+dbfile.bin size = 264
+          select 	1 	 29
+               * 	3 	 73
+            from 	1 	 25
+            tab1 	2 	 85
+                 	7 	 95
+SELECT statement
++----------------+----------------+----------------+----------------+
+|name            |quizzes         |midterm         |final           |
++----------------+----------------+----------------+----------------+
+|Siu             |11              |80              |999             |
+|Frank           |22              |100             |700             |
+|Jordon          |33              |75              |525             |
+|Jeff            |44              |60              |515             |
+|Ying            |55              |85              |625             |
+|new             |55              |85              |625             |
++----------------+----------------+----------------+----------------+
+6 rows selected.
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem End of test1.bat 
+
+C:\Users\Pak Ho\Desktop\CS Work\CS157B\Project1>rem
